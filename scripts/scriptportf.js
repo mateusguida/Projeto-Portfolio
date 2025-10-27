@@ -30,9 +30,7 @@ navLinks.forEach(link => {
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
       const headerHeight = document.querySelector('header').offsetHeight;
-      alert(headerHeight);
       const targetPosition = target.offsetTop - headerHeight - 20;
-      alert(targetPosition);
       window.scrollTo({
         top: targetPosition,
         behavior: 'smooth'
